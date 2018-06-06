@@ -1,0 +1,45 @@
+.container {
+  height: 100%;
+  @include flexbox();
+  background: #fff;
+  flex-direction: column;
+  header {
+    height: .44rem;
+    background: $base-color;
+    font-size: .18rem;
+    text-align: center;
+    line-height: .44rem;
+    color: #fff;
+  }
+  .main {
+    @include flex();
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  footer {
+    height: .44rem;
+    ul {
+      width: 100%;
+      height: 100%;
+      @include flexbox();
+      background: #f6f6f6;
+      @include border(1px 0 0 0);
+      li {
+        height: 100%;
+        @include flex();
+        @include flexbox();
+        @include align-items();
+        @include justify-content();
+        font-size: .18rem;
+        &.active {
+          background: #e7f3f0;
+          color: $base-color;
+        }
+        b {
+          font-weight: 100;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+<ul class="pagination pagination-sm no-margin pull-right">
+  <li><a href="#/position/0">&laquo;</a></li>
+  <% for (var i = 0; i < pagecount; i++) { %>
+    {{if i == pageno}}
+      <li class="active"><a href="#/position/{{i}}">{{i+1}}</a></li>
+    {{else}}
+      <li><a href="#/position/{{i}}">{{i+1}}</a></li>
+    {{/if}}
+  <% } %>
+  <li><a href="#/position/{{pagecount-1}}">&raquo;</a></li>
+</ul>

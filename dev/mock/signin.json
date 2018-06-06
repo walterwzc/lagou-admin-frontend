@@ -1,0 +1,10 @@
+{
+  "ret": true,
+  "errcode": 10,
+  "errmsg": "无法存取数据库",
+  "data": {
+    "success": true,
+    "username": "admin",
+    "token": "adfaiweurdsj"
+  }
+}

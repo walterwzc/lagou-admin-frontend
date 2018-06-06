@@ -1,0 +1,47 @@
+<!-- Horizontal Form -->
+<div class="box box-info">
+  <div class="box-header with-border">
+    <h3 class="box-title">添加职位信息</h3>
+  </div>
+  <!-- /.box-header -->
+  <!-- form start -->
+  <form class="form-horizontal" method="post" id="addForm" action="/api/position/add" enctype="multipart/form-data">
+    <div class="box-body">
+      <div class="form-group">
+        <label for="companyName" class="col-sm-1 control-label">公司名称</label>
+
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="companyName" name="companyName" placeholder="请输入公司名称">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="companyLogo" class="col-sm-1 control-label">公司logo</label>
+
+        <div class="col-sm-11">
+          <input type="file" id="companyLogo" name="companyLogo">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="positionName" class="col-sm-1 control-label">职位名称</label>
+
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="positionName" name="positionName" placeholder="请输入职位名称">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="positionSalary" class="col-sm-1 control-label">职位薪资</label>
+
+        <div class="col-sm-11">
+          <input type="text" class="form-control" id="positionSalary" name="positionSalary" placeholder="请输入职位薪资">
+        </div>
+      </div>
+    </div>
+    <!-- /.box-body -->
+    <div class="box-footer">
+      <a href="#/position"><button type="button" class="btn btn-default">返回</button></a>
+      <button type="button" id="addSubmit" class="btn btn-info pull-right">提交</button>
+    </div>
+    <!-- /.box-footer -->
+  </form>
+</div>
+<!-- /.box -->

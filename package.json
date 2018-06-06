@@ -1,0 +1,40 @@
+{
+  "name": "lagou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mock": "json-server ./dev/mock/mock.js -p 3000 -w true -r ./dev/mock/routes.json",
+    "dev": "gulp --env development",
+    "build": "gulp --env production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rev": "^8.1.1",
+    "gulp-rev-collector": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-sequence": "^1.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-watch": "^5.0.0",
+    "gulp-webserver": "^0.9.1",
+    "http-proxy-middleware": "^0.17.4",
+    "minimist": "^1.2.0",
+    "node-sass": "^4.7.2",
+    "run-sequence": "^2.2.1",
+    "string-loader": "0.0.1",
+    "webpack-stream": "^4.0.0"
+  },
+  "dependencies": {}
+}

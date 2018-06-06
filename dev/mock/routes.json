@@ -1,0 +1,5 @@
+{
+  "/api/users/issignin": "/issignin",
+  "/api/users/signup": "/signup",
+  "/api/users/signin": "/signin"
+}
